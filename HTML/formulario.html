@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1><i>FORMULÁRIOS</i></h1>
+
+    <form action="test.php" method="post">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" name="nome" placeholder="Nome">
+        <br> <br>
+        <label for="sobrenome">Sobrenome</label>
+        <input id="sobrenome" type="text" name="sobrenome" placeholder="Sobrenome">
+        <br><br>
+        <label>Nota</label>
+        <input type="number" name="nota" placeholder="Nota" min="0" max="10" step="0.1">
+        <br><br>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Email">
+        <br><br>
+        <label>Cor favorita</label>
+        <input type="color" name="cor">
+        <br><br>
+        <label>Data de nascimento</label>
+        <input type="date" name="dataDeNascimento" placeholder="Data de nascimento">
+        <br><br>
+        <label>Hora</label>
+        <input type="time" name="hora" placeholder="Hora">
+        <br><br>
+        <label>Senha</label>
+        <input type="password" name="senha" placeholder="Senha">
+        <br><br>
+        <label>Qual nota você indica para este estabelecimento?</label>
+        0<input type="range" name="estrelas" min="0" max="5" step="1">5
+        <br><br>
+        <label>Arquivo</label>
+        <input type="file" name="foto">
+        <br><br>
+        <h3>Checkbox</h3>
+        <input id="jogos" type="checkbox" name="opcoes[]">
+        <label for="jogos">Jogos</label>
+        <br>
+        <input id="jornais" type="checkbox" name="opcoes[]">
+        <label for="jornais">Jornais</label>
+        <br>
+        <input id="televisao" type="checkbox" name="opcoes[]">
+        <label for="televisao">Televisão</label>
+        <br>
+        <input id="redes" type="checkbox" name="opcoes[]">
+        <label for="redes">Redes Sociais</label>
+        <br><br>
+        <label>Autorização</label>
+        <br>
+        <input type="checkbox" name="liEdital"> Eu li e concordo com o edital.
+        <br><br>
+        Você estuda no IFRS?
+        <br>
+        <input type="radio" name="estuda" value="S"> Sim
+        <input type="radio" name="estuda" value="N"> Não
+        <br><br>
+        <h3>Buttons</h3>
+        <input type="button" value="Clique aqui">
+        <br><br>
+        <input type="reset" value="Limpar Formulário">
+        <br><br>
+        <input type="submit" value="Enviar Dados">
+        <br><br>
+        <button type="button">Clique aqui</button> 
+
+        <input type="hidden" name="id" value="3">
+        <br><br>
+        <h3>Text Area</h3>
+        <label>Descrição</label>
+        <textarea name="descricao" cols="30" rows="10"></textarea>
+        <br>
+        <h3>Select</h3>
+        <select name="estados">
+            <option value="-1" >Selecione</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+        </select>
+</form>
+
+
+
+</body>
+</html>
