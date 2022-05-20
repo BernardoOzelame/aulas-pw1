@@ -8,29 +8,38 @@
     <h1><i>FORMULÁRIOS</i></h1>
 
     <form action="test.php" method="post">
-        <label for="nome">Nome</label>
-        <input id="nome" type="text" name="nome" placeholder="Nome">
-        <br> <br>
-        <label for="sobrenome">Sobrenome</label>
-        <input id="sobrenome" type="text" name="sobrenome" placeholder="Sobrenome">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" name="nome" placeholder="Nome">
+                <br> <br>
+                <label for="sobrenome">Sobrenome</label>
+                <input id="sobrenome" type="text" name="sobrenome" placeholder="Sobrenome">
+                <br><br>
+                <label>Data de nascimento</label>
+                <input type="date" name="dataDeNascimento" placeholder="Data de nascimento">
+        </fieldset>
         <br><br>
-        <label>Nota</label>
-        <input type="number" name="nota" placeholder="Nota" min="0" max="10" step="0.1">
-        <br><br>
-        <label>Email</label>
-        <input type="email" name="email" placeholder="Email">
-        <br><br>
-        <label>Cor favorita</label>
-        <input type="color" name="cor">
-        <br><br>
-        <label>Data de nascimento</label>
-        <input type="date" name="dataDeNascimento" placeholder="Data de nascimento">
-        <br><br>
-        <label>Hora</label>
-        <input type="time" name="hora" placeholder="Hora">
-        <br><br>
-        <label>Senha</label>
-        <input type="password" name="senha" placeholder="Senha">
+        <fieldset>
+            <legend>Dados</legend>
+                <label>Nota</label>
+                <input type="number" name="nota" placeholder="Nota" min="0" max="10" step="0.1">
+                <br><br>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email">
+                <br><br>
+                <label>Senha</label>
+                <input type="password" name="senha" placeholder="Senha">
+                <br><br>
+                <label>Cor favorita</label>
+                <input type="color" name="cor">
+                <br><br>
+                <label>Data de nascimento</label>
+                <input type="date" name="dataDeNascimento" placeholder="Data de nascimento">
+                <br><br>
+                <label>Hora</label>
+                <input type="time" name="hora" placeholder="Hora">
+        </fieldset>
         <br><br>
         <label>Qual nota você indica para este estabelecimento?</label>
         0<input type="range" name="estrelas" min="0" max="5" step="1">5
@@ -110,7 +119,7 @@
         <h5>Quanto é 2+2?</h5>
         <ul type="none">
             <li>
-                <input type="radio"  name="q1" id="q1a" value="A"> <label for="q1a">0</label>
+                <input type="radio" name="q1" id="q1a" value="A"> <label for="q1a">0</label>
             </li>
             <li>
                 <input type="radio" name="q1" id="q1b" value="B"> <label for="q1b">1</label>
