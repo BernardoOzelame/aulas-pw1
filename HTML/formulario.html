@@ -82,6 +82,67 @@
             <option value="RJ">Rio de Janeiro</option>
             <option value="SP">São Paulo</option>
         </select>
+
+        <h5>Permitir que o usuário selecione apenas uma opção</h5>
+        <ul type="none">
+            <li>
+                <input type="radio" id="manha" name="turno" value="manha"> <label for="manha">Manhã</label>
+            </li>
+            <li>
+                <input type="radio" id="tarde" name="turno" value="tarde"> <label for="tarde">Tarde</label>
+            </li>
+            <li>
+                <input type="radio" id="noite" name="turno" value="noite"> <label for="noite">Noite</label>
+            </li>
+        </ul>
+        <h5>Escolha um curso</h5>
+        <ul type="none">
+            <li>
+                <input type="radio" id="agro" name="curso" value="agro"> <label for="agro">Agro</label>
+            </li>
+            <li>
+                <input type="radio" id="info" name="curso" value="info"> <label for="info">Info</label>
+            </li>
+            <li>
+                <input type="radio" id="viti/eno" name="curso" value="viti/eno"> <label for="viti/eno">Viti/Eno</label>
+            </li>
+        </ul>
+        <h5>Quanto é 2+2?</h5>
+        <ul type="none">
+            <li>
+                <input type="radio"  name="q1" id="q1a" value="A"> <label for="q1a">0</label>
+            </li>
+            <li>
+                <input type="radio" name="q1" id="q1b" value="B"> <label for="q1b">1</label>
+            </li> 
+            <li>
+                <input type="radio" name="q1" id="q1c" value="C"> <label for="q1c">2</label>
+            </li>
+            <li>
+                <input type="radio" name="q1" id="q1d" value="D"> <label for="q1d">3</label>
+            </li> 
+            <li>
+                <input type="radio" name="q1" id="q1e" value="E"> <label for="q1e">4</label>
+            </li>
+        </ul>
+        <h5>Permitir que o usuário selecione mais de uma opção</h5>
+        <fieldset>
+            <legend>Selecione as disciplinas favoritas</legend>
+            <ul type="none">
+                <li>
+                    <input type="checkbox" name="disciplinas[]" id="mat" value="MAT"><label for="mat">Matemática</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="disciplinas[]" id="por" value="POR"><label for="por">Português</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="disciplinas[]" id="qui" value="QUI"><label for="qui">Química</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="disciplinas[]" id="fis" value="FIS"><label for="fis"> Física</label>
+                </li>
+            </ul>
+        </fieldset>
 </form>
 
 
